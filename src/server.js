@@ -20,7 +20,7 @@ const app = express();
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://YOUR-VERCEL-URL.vercel.app"
+    "https://signflow-frontend-ecru.vercel.app.vercel.app"
   ],
   credentials: true
 }));
