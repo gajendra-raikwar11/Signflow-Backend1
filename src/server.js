@@ -18,8 +18,11 @@ const webhookRoutes = require("./routes/webhook.routes");
 
 const app = express();
 app.use(cors({
-  origin: "http://localhost:5173",
-  credentials: true,
+  origin: [
+    "http://localhost:5173",
+    "https://YOUR-VERCEL-URL.vercel.app"
+  ],
+  credentials: true
 }));
 
 // Raw body capture — webhook + express.json dono ke liye
